@@ -1,0 +1,72 @@
+##Python Library for Data Processing and Modelling##
+1)Pandas
+2)Numpy
+3)Scipy
+4)Scikit Learn
+5)Keras
+6)Tensor Flow
+
+##Python Library for Data Visualization
+1)SeaBorn
+2)MatplotLib
+3)Plotly
+
+###Intro on Google Colab
+
+###How to identify if a particular word is a keyword or not
+import keyword
+keyword.iskeyword('None')
+
+##How to take input in python
+a = input()
+*In python,when you take input from user it defines in terms of string only
+**To tackle it,we need to add datatype
+a = int(input())
+**Other way
+a= int(input("Enter the value of a"))
+
+***Using the print statement when there is quotes inside
+print('''MHM's Outcome based Education''')
+***Usage of defined variables in print statement
+print('My name is {} and my age is {}'.format(name,age))
+***Usage of variables at multiple instances in a name
+print('My name is {one} and my age is {two} and {one} is a professional singer'.format(one=name,two=age))
+
+**Another way of defining
+print("My name is %s and my age is %d"%(name,age))
+
+
+**How to create list,tuple,set and dictionary
+a = (1,2,3,4) $$$Tuple
+a = [1,2,3,4] $$$List
+a = {1,2,3,4} $$$Set
+a = {a:1,b:2} $$$Dictionary
+
+Tuple
+***When your tuple has only single value,you need to give comma
+Set
+***In a set,all the repeated values will be automatically deleted.
+
+##String operations in Python
+
+@@In a string last location starts with -1 index
+
+##Reversing a string
+var = "Python"
+var[::-1]
+
+##Replacing a particular word in a string
+old = "I like you,but now i started like you little"
+new = old.replace('like','love')
+
+###Method gives space in between characters in Python
+("_".join("Python"))
+
+print("The count of O is:",str_count)
+
+###Method to remove the Lstrip and Rstrip
+
+str = "!!!!!!!!!!!!!!!!!!!!!!!Hello"
+str.lstrip('!')
+
+
