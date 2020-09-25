@@ -1,0 +1,23 @@
+##Types of Operator in Python##
+1)Arithmetic Operators
+2)Comparison Operators
+3)Assignment Operators
+4)Logical Operators
+5)Bitwise Operators
+6)Membership Operators
+7)Identity Operators
+
+a**b
+--gives a to the power of b
+
+a%b
+-- gives remainder
+
+Assignment Operators
+
+c+=a
+c-=a
+c%=a
+c//=a
+
+##Bitwise Operators
