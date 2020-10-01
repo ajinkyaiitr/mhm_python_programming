@@ -1,0 +1,181 @@
+###Sci-Pi function
+@@Finding Cube Root
+import scipy
+from scipy import cbrt
+cb = cbrt(27)
+print(cb)
+
+###Finding Eigen Value and Eigen Vector
+
+from scipy import linalg
+import numpy as np
+array_1 = np.array([4,5],[3,2])
+deter = linalg.det(array_1)
+inv = linalg.inv(array_1)
+eigen_val,eigen_vec = linalg.eig(array_1)
+print(eigen_val)
+print(eigen_vec)
+
+###Datetime and Calendar Module
+import time  
+time.sleep(10)      ####delay execution
+time.time()  ###Illogical value
+time.localtime(time.time())
+time.asctime()
+tuple=(1987,9,4,0,0,0,0,0,0)
+time.mktime(tuple)
+time.localtime(time.mktime(tuple))
+
+from datetime import datetime
+Time = time(11,34,56,7)
+print("hour =",Time.hour)
+print("minute=",Time.minute)
+print("Second =",Time.second)
+print("microsecond=",Time.microsecond)
+today = datetime.now()
+today
+
+###Calendar Module
+import time  
+time.sleep(10)      ####delay execution
+time.time()  ###Illogical value
+time.localtime(time.time())
+time.asctime()
+tuple=(1987,9,4,0,0,0,0,0,0)
+time.mktime(tuple)
+time.localtime(time.mktime(tuple))
+
+from datetime import datetime
+Time = time(11,34,56,7)
+print("hour =",Time.hour)
+print("minute=",Time.minute)
+print("Second =",Time.second)
+print("microsecond=",Time.microsecond)
+today = datetime.now()
+today
+
+****Create,Edit,Write,Read Text file using Python*****
+f = open("mhm.txt","w")
+f.write("This is the First Line \n")
+f.close()
+
+#Append
+f=open("mhm.txt","a+")
+f.write("This is the second line")
+f.close()
+
+#Read
+f = open("mhm.txt","r")
+content = f.read()
+print(content)
+length = len(content)
+print(length)
+f.close()
+---Reading only some characters of a file
+f = open("mhm.txt","r")
+content = f.read((10))
+print(content)
+f.close()
+
+####Exception Handling in Python*****
+
+Common Exception
+1)ImportError - an import fails
+2)IndexError - a list is indexed with an out of range number
+3)NameError - an unknown variable is used
+4)SyntaxError - the code cant be parsed properly
+5)TypeError - a function is called on a value of an inappropiate type
+6)ValueError - incorrect value
+
+print("Enter Numerator")
+num = input()
+print("Enter Denominator")
+den = input()
+try:
+  res = int(num)/int(den)
+except:
+  print("Divide by Zero")
+else:    
+  print(res)
+
+##Collection Module
+---Collections module implements specialized container datatypes providing alternatives to Python's general purpose built in containers,dict,list,set and tuple
+import collections
+import collections
+from collections import Counter
+c = Counter(a=4,b=2,c=0,d=-2)  ###Counter is basically a initialization constructor in python
+print(list(c.elements()))
+
+List = ['a', 'a', 'a', 'a', 'b', 'b']
+c = Counter(List)
+print(c)
+
+str_1 = "MHM Outcome's Education"
+print("Original String:" +str_1)
+print("Most Common Characteristics in a String:")
+print(Counter(str_1).most_common(3))
+
+
+
+from collections import deque
+dq = deque("the quick brown fox jumps over the lazy dog")
+for element in dq:
+  print(element)
+ 
+ 
+deque_colors.rotate(3)
+print(deque_colors)
+
+deque_colors.append("purple")
+print(deque_colors)
+
+deque_colors.reverse()
+print(deque_colors)
+
+deque_colors.popleft()
+print(deque_colors)
+
+deque_colors.pop()
+print(deque_colors)
+ 
+ from collections import Counter
+import re
+text = """Keep your laptop, keep phone prior 30 min away
+ your Set a deadline
+ your Social Media Detox
+Drink 1 glass water once you wake up"""
+words = re.findall('\w+',text)
+#print(words)
+print(Counter(words).most_common(5))
+ 
+ 
+ 
+import collections
+from collections import Counter
+nums = (2,3,9,0,1,4,2,4,6,7,2,3,1,4,5,6,67)
+#nums_dq = collections.deque(nums)
+print(nums.count(2))
+
+
+####Regular Expressions
+
+###List,Comphrehensions,Sets,FrozenSets and Assertions
+
+x = [1,2,3,4,5]
+out = []
+for element im x:
+ out.append(element *2)
+print(out)
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
